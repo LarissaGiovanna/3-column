@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+main {
+    color: hsl(0, 0%, 95%);
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.container #more {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50px;
+    padding: 12px 30px 12px 30px;
+    font-family: Lexend Deca;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+#more:hover{
+    background-color: hsl(0, 2%, 78%);
+}
+
+#title {
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.container img {
+    width: 45px;
+}
+
+.container p,
+img {
+    margin-bottom: 20px;
+}
+
+.container p:not(#title) {
+    font-family: Lexend Deca;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 70px;
+}
+
+.block1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+.block1 #more {
+    color: hsl(31, 77%, 52%);
+}
+
+.block2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3%;
+    height: auto;
+}
+
+.block2 #more {
+    color: hsl(184, 100%, 22%);
+}
+
+.block3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3%;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+.block3 #more {
+    color: hsl(179, 100%, 13%);
+}
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        padding: 50px 30px 50px 30px;
+        display: block;
+    }
+
+    .block1 {
+        padding: 10%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .block1 #title {
+        font-size: 25px;
+    }
+
+    .block1 p:not(#title) {
+        font-size: 15px;
+    }
+    .block2 {
+        padding: 10%;
+    }
+
+    .block2 #title {
+        font-size: 25px;
+    }
+
+    .block2 p:not(#title) {
+        font-size: 15px;
+    }
+    .block3 {
+        padding: 10%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .block3 #title {
+        font-size: 25px;
+    }
+
+    .block3 p:not(#title) {
+        font-size: 15px;
+    }
+}
